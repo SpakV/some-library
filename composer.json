@@ -1,12 +1,18 @@
 {
 	"name": "spakv/some-library",
 	"description": "Some library",
+	"authors": [
+		{
+			"name": "Pak Sergey",
+			"email": "paksv@gmail.com"
+		}
+	],
 	"require": {
 		"php": "^7.2"
 	},
 	"autoload": {
-		"classmap": [
-			"src/"
-		]
+		"psr-4": {
+			"SPakV\\": "src"
+		}
 	}
 }
